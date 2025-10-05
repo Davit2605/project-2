@@ -77,31 +77,6 @@ body {
   .brand-logo {
     height: 50px;
   }
-  .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% - 40px); /* ensures 20px margin on each side */
-    max-width: 320px; /* prevents it from being too wide */
-    font-size: 14px;
-    padding: 12px 16px;
-    line-height: 1.4;
-    word-wrap: break-word;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  /* .popup {
-    top: 50%;
-    left: 50%;
-    bottom: auto;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    font-size: 14px;
-    padding: 10px 16px;
-    line-height: 1.4;
-    word-wrap: break-word;
-  } */
 }
 .brand-text {
   display: flex;
