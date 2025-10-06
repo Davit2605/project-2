@@ -78,7 +78,6 @@ body {
     height: 50px;
   }
   .popup{
-    position: fixed;
   bottom: 175px;
   right: 30px;
 }
