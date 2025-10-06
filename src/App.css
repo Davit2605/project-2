@@ -577,5 +577,10 @@ h2 {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+@media (min-width: 1025px) {
+  .whatsapp-float {
+    display: none;
+  }
+}
 
 
