@@ -540,6 +540,18 @@ export default function App() {
                 <a className="btn btn-outline" href="tel:+353873498258">
                   Call Us
                 </a>
+                <a
+                  href="https://wa.me/353873498258" // 👈 replace with your WhatsApp number, e.g., 353871234567
+                  className="whatsapp-float"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    alt="WhatsApp"
+                  />
+                </a>
               </div>
             </form>
           </div>
