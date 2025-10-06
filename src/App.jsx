@@ -183,6 +183,13 @@ export default function App() {
     // hide popup automatically after 4s
     setTimeout(() => setShowPopup(false), 4000);
   };
+  useEffect(() => {
+  const handleScroll = () => {
+    setNavOpen(false); // closes menu when scrolling
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <>
