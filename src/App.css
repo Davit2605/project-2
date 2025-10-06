@@ -501,9 +501,12 @@ h2 {
   margin-bottom: 0.35rem;
 }
 .popup {
-  position: fixed;
+  /* position: fixed;
   bottom: 200px;
-  right: 50%;
+  right: 50%; */
+  display flex;
+  align-items:center;
+  justify-content:center;
   background: white;
   padding: 12px 18px;
   border-radius: 8px;
