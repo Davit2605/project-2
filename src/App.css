@@ -505,7 +505,8 @@ h2 {
   position: fixed;
   bottom: 200px;
   right: 75px;
-  overflow-wrap: anywhere;
+  /* word-wrap: break-word; */
+  text-wrap: wrap;
   background: white;
   padding: 12px 18px;
   border-radius: 8px;
