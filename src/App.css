@@ -512,6 +512,7 @@ h2 {
   z-index: 9999;
   animation: fadeInOut 4s forwards;
 }
+
 .popup.success {
   border-left: 5px solid green;
   color: green;
