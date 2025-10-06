@@ -205,7 +205,7 @@ export default function App() {
             </span>
           </a>
 
-          <nav className={`main-nav ${navOpen ? "open" : ""}`} id="main-nav">
+          {/* <nav className={`main-nav ${navOpen ? "open" : ""}`} id="main-nav">
             <ul>
               <li>
                 <a href="#home" onClick={() => setNavOpen(false)}>
@@ -229,6 +229,80 @@ export default function App() {
               </li>
               <li>
                 <a href="#contact" onClick={() => setNavOpen(false)}>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav> */}
+
+          <nav className={`main-nav ${navOpen ? "open" : ""}`}>
+            <ul>
+              <li>
+                <a
+                  href="#home"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector("#home");
+                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => setNavOpen(false), 300); // slight delay
+                  }}
+                >
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector("#services");
+                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => setNavOpen(false), 300);
+                  }}
+                >
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#portfolio"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector("#portfolio");
+                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => setNavOpen(false), 300);
+                  }}
+                >
+                  Gallery
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#reviews"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector("#reviews");
+                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => setNavOpen(false), 300);
+                  }}
+                >
+                  Reviews
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector("#contact");
+                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => setNavOpen(false), 300);
+                  }}
+                >
                   Contact Us
                 </a>
               </li>
