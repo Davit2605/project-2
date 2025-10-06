@@ -502,8 +502,8 @@ h2 {
 }
 .popup {
   position: fixed;
-  bottom: 200px;
-  right: 70px;
+  bottom: 20px;
+  right: 20px;
   background: white;
   padding: 12px 18px;
   border-radius: 8px;
