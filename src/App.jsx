@@ -208,7 +208,7 @@ export default function App() {
             />
             <span className="brand-text">
               <strong>Pure Vision</strong>
-              <small>Painting</small>
+              <small>Painting & Decorating</small>
             </span>
           </a>
 
