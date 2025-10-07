@@ -542,7 +542,7 @@ h2 {
 
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   z-index: 999;
   background-color: #25d366;
