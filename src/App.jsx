@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import logo from "../src/assets/logo.png";
 import hero_pic from "../src/assets/hero-pic.png";
+import bedroom from "../src/assets/bedroom.png";
+import living_room from "../src/assets/living-room.png";
+import commercial_office from "../src/assets/commercial-office.png";
 
 export default function App() {
   const [navOpen, setNavOpen] = useState(false);
