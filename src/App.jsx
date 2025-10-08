@@ -371,7 +371,7 @@ export default function App() {
 
           <div className="cards">
             <article className="card">
-              <div className="card-ico">🎨</div>
+              <div className="card-ico">🪒</div>
               <h3>Interior Painting</h3>
               <p>
                 Wall & ceiling painting, trim, doors, and cabinetry finishes
