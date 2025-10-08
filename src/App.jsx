@@ -436,26 +436,30 @@ export default function App() {
           <h2>Our Portfolio</h2>
           <p className="lead">Before & afters — examples of recent projects.</p>
 
-          <div className="gallery">
+         <div className="gallery">
             <figure className="thumb">
-              <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              {/* <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
                 <rect width="100%" height="100%" fill="#f6f6f6" />
                 <rect width="100%" height="100%" fill="#e9e9e9" />
-              </svg>
+              </svg> */}
+              <img src={living_room} alt="Living-room picture" />
               <figcaption>Interior — Living Room</figcaption>
             </figure>
 
             <figure className="thumb">
-              <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              {/* <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
                 <rect width="100%" height="100%" fill="#dff3ff" />
-              </svg>
-              <figcaption>Exterior — Cottage</figcaption>
+              </svg> */}
+
+              <img src={bedroom} alt="Bedroom picture" />
+              <figcaption>Interior — Bedroom</figcaption>
             </figure>
 
             <figure className="thumb">
-              <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+              {/* <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
                 <rect width="100%" height="100%" fill="#eef7f0" />
-              </svg>
+              </svg> */}
+              <img src={commercial_office} alt="Commercial Office picture" />
               <figcaption>Commercial Office</figcaption>
             </figure>
           </div>
