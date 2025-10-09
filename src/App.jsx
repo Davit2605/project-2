@@ -276,7 +276,7 @@ export default function App() {
               </li>
 
               <li>
-                <a
+                {/* <a
                   href="#portfolio"
                   onClick={(e) => {
                     e.preventDefault();
@@ -286,7 +286,23 @@ export default function App() {
                   }}
                 >
                   Gallery
-                </a>
+                </a> */}
+                <a
+  href="#portfolio"
+  onClick={(e) => {
+    e.preventDefault();
+    const section = document.querySelector("#portfolio");
+    if (section) {
+      const yOffset = -70;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    setTimeout(() => setNavOpen(false), 300);
+  }}
+>
+  Gallery
+</a>
+
               </li>
 
               <li>
