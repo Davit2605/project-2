@@ -293,7 +293,7 @@ export default function App() {
     e.preventDefault();
     const section = document.querySelector("#portfolio");
     if (section) {
-      const yOffset = -80;
+      const yOffset = -90;
       const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
