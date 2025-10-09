@@ -547,7 +547,13 @@ export default function App() {
                 <a className="btn btn-outline" href="tel:+353873498258">
                   Call Us
                 </a>
-                <a
+               
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+ <a
                   href="https://wa.me/353873498258" // 👈 replace with your WhatsApp number, e.g., 353871234567
                   className="whatsapp-float"
                   target="_blank"
@@ -559,12 +565,6 @@ export default function App() {
                     alt="WhatsApp"
                   />
                 </a>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
-
       {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-inner">
