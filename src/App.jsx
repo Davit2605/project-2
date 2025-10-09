@@ -247,7 +247,7 @@ export default function App() {
 
           <nav className={`main-nav ${navOpen ? "open" : ""}`}>
             <ul>
-              <li>
+              {/* <li>
                 <a
                   href="#home"
                   onClick={(e) => {
@@ -258,7 +258,22 @@ export default function App() {
                   }}
                 >
                   Home
-                </a>
+                </a> */}
+                 <a
+              href="#home"
+          onClick={(e) => {
+          e.preventDefault();
+        const section = document.querySelector("#home");
+        if (section) {
+            const yOffset = -95;
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    setTimeout(() => setNavOpen(false), 300);
+  }}
+>
+  Home
+</a>
               </li>
 
               <li>
