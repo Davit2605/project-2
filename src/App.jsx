@@ -262,7 +262,7 @@ export default function App() {
               </li>
 
               <li>
-                <a
+                {/* <a
                   href="#services"
                   onClick={(e) => {
                     e.preventDefault();
@@ -272,7 +272,22 @@ export default function App() {
                   }}
                 >
                   Services
-                </a>
+                </a> */}
+                   <a
+              href="#services"
+          onClick={(e) => {
+          e.preventDefault();
+        const section = document.querySelector("#services");
+        if (section) {
+            const yOffset = -95;
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    setTimeout(() => setNavOpen(false), 300);
+  }}
+>
+  Services
+</a>
               </li>
 
               <li>
@@ -288,14 +303,14 @@ export default function App() {
                   Gallery
                 </a> */}
                 <a
-  href="#portfolio"
-  onClick={(e) => {
-    e.preventDefault();
-    const section = document.querySelector("#portfolio");
-    if (section) {
-      const yOffset = -90;
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
+              href="#portfolio"
+          onClick={(e) => {
+          e.preventDefault();
+        const section = document.querySelector("#portfolio");
+        if (section) {
+            const yOffset = -95;
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
     }
     setTimeout(() => setNavOpen(false), 300);
   }}
@@ -306,7 +321,7 @@ export default function App() {
               </li>
 
               <li>
-                <a
+                {/* <a
                   href="#reviews"
                   onClick={(e) => {
                     e.preventDefault();
@@ -316,11 +331,26 @@ export default function App() {
                   }}
                 >
                   Reviews
-                </a>
+                </a> */}
+                   <a
+              href="#reviews"
+          onClick={(e) => {
+          e.preventDefault();
+        const section = document.querySelector("#reviews");
+        if (section) {
+            const yOffset = -95;
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    setTimeout(() => setNavOpen(false), 300);
+  }}
+>
+  Reviews
+</a>
               </li>
 
               <li>
-                <a
+                {/* <a
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault();
@@ -330,7 +360,22 @@ export default function App() {
                   }}
                 >
                   Contact Us
-                </a>
+                </a> */}
+                   <a
+              href="#contact"
+          onClick={(e) => {
+          e.preventDefault();
+        const section = document.querySelector("#contact");
+        if (section) {
+            const yOffset = -95;
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    setTimeout(() => setNavOpen(false), 300);
+  }}
+>
+  Contact Us
+</a>
               </li>
             </ul>
           </nav>
