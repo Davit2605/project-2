@@ -153,7 +153,7 @@ body {
     font-size: 2rem;
   }
 
-  .main-nav {
+  /* .main-nav {
     position: fixed;
     top: 80px;
     right: 0;
@@ -168,6 +168,27 @@ body {
 
   .main-nav.open {
     transform: translateX(0);
+  } */
+  .main-nav {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    background: var(--bg);
+    width: 240px;
+    height: calc(100% - 64px);
+    border-left: 1px solid rgba(15, 50, 64, 0.06);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1000;
+    visibility: hidden;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  .main-nav.open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .main-nav ul {
